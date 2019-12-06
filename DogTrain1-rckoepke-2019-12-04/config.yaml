@@ -8,7 +8,7 @@ project_path: /root/dog_training_NN/DogTrain1-rckoepke-2019-12-04/
 
 # Annotation data set configuration (and individual video cropping parameters)
 video_sets:
-  /work/DogTrain1-rckoepke-2019-12-04/videos/DogTrain1.mp4:
+  /root/dog_training_NN/DogTrain1-rckoepke-2019-12-04/videos/DogTrain1.mp4:
     crop: 0, 1280, 0, 720
 bodyparts:
 - bodypart1
