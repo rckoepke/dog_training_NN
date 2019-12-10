@@ -1,22 +1,17 @@
 FROM tensorflow/tensorflow:1.13.2-gpu
 MAINTAINER Ross Koepke <koepke@gmail.com>
 
-RUN apt install -y git
+RUN apt-get update && apt install --fix-missing -y git wget
 RUN git clone https://github.com/AlexEMG/DeepLabCut.git
-RUN apt install -y wget
 RUN mkdir ~/tmp
-RUN cd ~/tmp
-RUN wget https://repo.anaconda.com/archive/Anaconda3-2019.10-Linux-x86_64.sh
-RUN bash Anaconda3-2019.10-Linux-x86_64.sh
-RUN source ../.bashrc
-RUN cd ../DeepLabCut/conda-environments/
-RUN conda env create -f dlc-ubuntu-GPU.yaml # sometimes long pause after `execute environement : done`
-RUN source activate dlc-ubuntu-GPU
-RUN cd ~
-RUN git clone https://github.com/rckoepke/dog_training_NN
+RUN wget https://repo.anaconda.com/archive/Anaconda3-2019.10-Linux-x86_64.sh -P /root/tmp/
+RUN bash /root/tmp/Anaconda3-2019.10-Linux-x86_64.sh -b -p /root/anaconda3
 
-RUN config_path = '/root/dog_training_NN/DogTrain1-rckoepke-2019-12-04/config.yaml'
+RUN eval "$(/root/anaconda3/bin/conda shell.bash hook)"
+RUN conda init
 
-RUN deeplabcut.train_network(config_path,shuffle=1,trainingsetindex=0,gputouse=None,max_snapshots_to_keep=5,autotune=False,displayiters=100,saveiters=15000, maxiters=30000)
+RUN source /root/.bashrc
+RUN conda env create -f /root/DeepLabCut/conda-environments/dlc-ubuntu-GPU.yaml # sometimes long pause after `execute environement : done`
+RUN source activate /root/DeepLabCut/conda-environments/dlc-ubuntu-GPU
 
 CMD ["/bin/bash"]
