@@ -41,7 +41,7 @@ multi_step:
 net_type: mobilenet_v2_1.0
 num_joints: 4
 pos_dist_thresh: 17
-project_path: /work/DogTrain1-rckoepke-2019-12-04
+project_path: /root/DogTrain1-rckoepke-2019-12-04
 rightwidth: 400
 save_iters: 50000
 scale_jitter_lo: 0.5
