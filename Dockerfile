@@ -8,10 +8,10 @@ RUN wget https://repo.anaconda.com/archive/Anaconda3-2019.10-Linux-x86_64.sh -P 
 RUN bash /root/tmp/Anaconda3-2019.10-Linux-x86_64.sh -b -p /root/anaconda3
 
 RUN eval "$(/root/anaconda3/bin/conda shell.bash hook)"
-RUN conda init
+RUN 'conda init'
 
 RUN source /root/.bashrc
-RUN conda env create -f /root/DeepLabCut/conda-environments/dlc-ubuntu-GPU.yaml # sometimes long pause after `execute environement : done`
-RUN source activate /root/DeepLabCut/conda-environments/dlc-ubuntu-GPU
+RUN conda env create -f /root/DeepLabCut/conda-environments/dlc-ubuntu-GPU.yaml # sometimes long pause after `execute environment : done`
+RUN source activate dlc-ubuntu-GPU
 
 CMD ["/bin/bash"]
