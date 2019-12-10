@@ -10,9 +10,9 @@ all_joints_names:
 - objectA
 dataset: training-datasets/iteration-0/UnaugmentedDataSet_DogTrain1Dec4/DogTrain1_rckoepke95shuffle1.mat
 global_scale: 0.8
-init_weights: /home/ubuntu/anaconda3/lib/python3.6/site-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/mobilenet_v2_1.0_224.ckpt
+init_weights: /root/anaconda3/envs/dlc-ubuntu-GPU/lib/python3.6/site-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/resnet_v1_50.ckpt
 location_refinement: true
 locref_stdev: 7.2801
-net_type: mobilenet_v2_1.0
+net_type: resnet_50
 num_joints: 4
 scoremap_dir: test
