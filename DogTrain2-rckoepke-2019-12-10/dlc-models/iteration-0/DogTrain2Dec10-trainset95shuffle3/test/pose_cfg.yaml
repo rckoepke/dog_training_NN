@@ -70,7 +70,7 @@ all_joints_names:
 - sternum
 dataset: training-datasets/iteration-0/UnaugmentedDataSet_DogTrain2Dec10/DogTrain2_rckoepke95shuffle3.mat
 global_scale: 0.8
-init_weights: /home/rckoepke/anaconda3/envs/dlc-ubuntu-GPU/lib/python3.6/site-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/resnet_v1_152.ckpt
+init_weights: /root/anaconda3/envs/dlc-ubuntu-GPU/lib/python3.6/site-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/resnet_v1_152.ckpt
 location_refinement: true
 locref_stdev: 7.2801
 net_type: resnet_152
