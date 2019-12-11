@@ -1,0 +1,7 @@
+2019-12-11 00:38:07,888 INFO Shuffle index:1, net_type:resnet_50, augmenter_type:imgaug, trainsetindex:0
+2019-12-11 00:38:27,027 INFO Shuffle index:2, net_type:resnet_101, augmenter_type:imgaug, trainsetindex:0
+2019-12-11 00:38:52,525 INFO Shuffle index:3, net_type:resnet_152, augmenter_type:imgaug, trainsetindex:0
+2019-12-11 00:39:02,996 INFO Shuffle index:4, net_type:mobilenet_v2_1.0, augmenter_type:imgaug, trainsetindex:0
+2019-12-11 00:39:11,817 INFO Shuffle index:5, net_type:mobilenet_v2_0.75, augmenter_type:imgaug, trainsetindex:0
+2019-12-11 00:39:19,561 INFO Shuffle index:6, net_type:mobilenet_v2_0.5, augmenter_type:imgaug, trainsetindex:0
+2019-12-11 00:39:26,459 INFO Shuffle index:7, net_type:mobilenet_v2_0.35, augmenter_type:imgaug, trainsetindex:0
