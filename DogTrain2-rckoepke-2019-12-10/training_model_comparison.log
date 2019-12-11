@@ -5,3 +5,10 @@
 2019-12-11 00:39:11,817 INFO Shuffle index:5, net_type:mobilenet_v2_0.75, augmenter_type:imgaug, trainsetindex:0
 2019-12-11 00:39:19,561 INFO Shuffle index:6, net_type:mobilenet_v2_0.5, augmenter_type:imgaug, trainsetindex:0
 2019-12-11 00:39:26,459 INFO Shuffle index:7, net_type:mobilenet_v2_0.35, augmenter_type:imgaug, trainsetindex:0
+2019-12-11 08:03:12,837 INFO Shuffle index:8, net_type:resnet_50, augmenter_type:imgaug, trainsetindex:0
+2019-12-11 08:03:28,061 INFO Shuffle index:9, net_type:resnet_101, augmenter_type:imgaug, trainsetindex:0
+2019-12-11 08:03:44,606 INFO Shuffle index:10, net_type:resnet_152, augmenter_type:imgaug, trainsetindex:0
+2019-12-11 08:03:51,608 INFO Shuffle index:11, net_type:mobilenet_v2_1.0, augmenter_type:imgaug, trainsetindex:0
+2019-12-11 08:03:56,850 INFO Shuffle index:12, net_type:mobilenet_v2_0.75, augmenter_type:imgaug, trainsetindex:0
+2019-12-11 08:04:04,778 INFO Shuffle index:13, net_type:mobilenet_v2_0.5, augmenter_type:imgaug, trainsetindex:0
+2019-12-11 08:04:10,715 INFO Shuffle index:14, net_type:mobilenet_v2_0.35, augmenter_type:imgaug, trainsetindex:0
