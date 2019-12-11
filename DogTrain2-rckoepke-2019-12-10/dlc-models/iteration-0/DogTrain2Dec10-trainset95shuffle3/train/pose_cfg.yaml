@@ -101,7 +101,7 @@ multi_step:
 net_type: resnet_152
 num_joints: 34
 pos_dist_thresh: 17
-project_path: /root/gits/dog_training_NN/DogTrain2-rckoepke-2019-12-10
+project_path: /root/dog_training_NN/DogTrain2-rckoepke-2019-12-10
 rightwidth: 400
 save_iters: 50000
 scale_jitter_lo: 0.5
