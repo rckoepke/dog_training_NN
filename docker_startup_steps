@@ -1,0 +1,15 @@
+#For future scripting
+
+eval "$(/root/anaconda3/bin/conda shell.bash hook)"
+source activate dlc-ubuntu-GPU
+apt install -y vim git
+git clone https://github.com/rckoepke/dog_training_NN.git
+export DLClight=True
+ipython
+In [1]: config_path = '/root/dog_training_NN/DogTrain2-rckoepke-2019-12-10/config.yaml'   
+In [2]: import deeplabcut    
+In [3]: deeplabcut.analyze_videos(config_path,['/root/dog_training_NN/DogTrain2-rckoepke-2019-12-10/DogTrain1-Fixed.mp4'], videotype='.mp4', save_as_csv=True)
+In [4]: deeplabcut.create_labeled_video(config_path,['/root/dog_training_NN/DogTrain2-rckoepke-2019-12-10/DogTrain1-Fixed.mp4'], save_frames=True, trailpoints=10, draw_skeleton=True
+
+git config --global user.email 'koepke@gmail.com'
+git config --global core.editor vim
