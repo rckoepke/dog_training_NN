@@ -6,7 +6,7 @@ f.write("import os: "+str(datetime.now()))
 f.flush()
 os.fsync(f.fileno())
 
-os.environ['DLClight'] = True
+os.environ['DLClight'] = "True"
 f.write("os.environ['DLClight'] = True: "+str(datetime.now()))
 f.flush()
 os.fsync(f.fileno())
